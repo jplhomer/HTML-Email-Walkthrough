@@ -3,7 +3,7 @@ A brief look at HTML email development.
 
 ## Explanation of HTML in email
 
-*[tldr](#tldr)*
+*[tldr](#best-practices)*
 
 * Use email marketing services to avoid being treated as spam.
 * Don't forget about text based emails. Emails are sent with a Multipart/Alternative MIME format meaning emails are sent as an HTML version and a text version to support email platforms that only accept text based emails.
@@ -22,7 +22,7 @@ When coding HTML emails it's important to note that you're not coding for the br
 
 When you're ready you should start with putting together a comprehensive email marketing plan. There are many resources available on how to do this so I won't go into detail here. You can avoid spam filters by including the basic [CAN-SPAM](http://www.ftc.gov/tips-advice/business-center/can-spam-act-compliance-guide-business) requirements. These requirements are actual laws so you should be familiar with them. Also, most ESPs won't let you send emails from their servers without this information. You'll also need to familiarize yourself with how spam filters work. Things like over using explanation marks, or vague subject lines are commonly known email mistakes to be avoided. Lesser known spam triggers are things like including large images in an email with less than a few characters of text. Or generating bad HTML code akin to something Microsoft Word would generate.
 
-<a name="tldr"></a>Basing your HTML off of a framework such as [Zurb's INK](http://zurb.com/ink/), or [MailChimps email design patterns](http://templates.mailchimp.com/resources/email-design-patterns/) helps alleviate most of the HTML rendering issues, and will give
+Basing your HTML off of a framework such as [Zurb's INK](http://zurb.com/ink/), or [MailChimps email design patterns](http://templates.mailchimp.com/resources/email-design-patterns/) helps alleviate most of the HTML rendering issues, and will give
 
 When coding your HTML bear in mind that you must _use tables_, and _inline CSS_. You should *avoid* *JavaScript, video, Flash, and animated GIFs*. Most CSS rules are supported, but you should check specific usage here: [MailChimp CSS Support](http://templates.mailchimp.com/resources/email-client-css-support/). Media queries are usable. However, since they cannot be set inline you should _add `!important`_ to each media query rule.
 
