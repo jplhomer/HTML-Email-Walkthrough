@@ -27,3 +27,10 @@ When you're ready you should start with putting together a comprehensive email m
 When coding your HTML bear in mind that you must _use tables_, and _inline CSS_. You should *avoid* *JavaScript, video, Flash, and animated GIFs*. Most CSS rules are supported, but you should check specific usage here: [MailChimp CSS Support](http://templates.mailchimp.com/resources/email-client-css-support/). Media queries are usable. However, since they cannot be set inline you should _add `!important`_ to each media query rule.
 
 Once you've built your HTML email run it through a pre-flight check list like [Premailer](http://premailer.dialect.ca/) and test it in as many email platforms as possible. If you find display errors check your email source using your email platforms ability to "show original" or view "raw source."
+
+---
+
+# Exorcise
+
+Using the `example-email.html` included in this repo take what we've learned and build an HTML emial using Zurb's INK](http://zurb.com/ink/) framework. To get started quickly using Ink you may want to clone and run this [Responsive Email Kit](https://github.com/itsahappymedium/responsive-email-kit) locally. You can test your emails using [PutsMail](https://putsmail.com/tests/new).
+
